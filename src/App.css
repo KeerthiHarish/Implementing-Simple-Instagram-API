@@ -1,0 +1,53 @@
+.video-icon {
+	position: absolute;
+	right: 23px;
+	top: 8px;
+	color: white;
+}
+.thumbnail{
+	padding: 1px;
+	cursor: pointer;
+}
+.thumbnail img, .img-responsive {
+	border-radius: 3px;
+}
+.toolbar{
+	text-align: center;
+}
+.toolbar-icon {
+	padding-right: 5px;
+	color: #545454;
+	font-size: 12px;
+}
+.toolbar-count {
+	padding-right: 10px;
+	font-size: 12px;
+}
+.active {
+	color: #37A8C7;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.not-active {
+	color: #545454;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.fa{
+	padding-left: 5px;
+	padding-right:5px;
+}
+.controls{
+	text-align: right;
+}
+.padd-left{
+	padding-left: 5px;
+}
+.padd-right{
+	padding-right: 5px;
+}
+.feed-grid{
+	max-height: 550px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
