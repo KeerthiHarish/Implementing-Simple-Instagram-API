@@ -16,6 +16,7 @@ export default class App extends React.Component {
     this.openPost = this.openPost.bind(this);
     this.open = this.open.bind(this);
     this.close = this.close.bind(this);
+    this.searchUser = this.searchUser.bind(this);
     this.state = {
       items: '',
       fetched: false,
@@ -26,7 +27,8 @@ export default class App extends React.Component {
   }
 
   searchUser(username) {
-
+    this.setState({username});
+    this.getFeed();
   }
 
   close() {

@@ -18,9 +18,10 @@ export default class OpenPost extends React.Component {
     return (
       <div>
         <Row>
-          <Col sm={6} smOffset={3}>
+          <Col md={12}>
             {dataLoad}
             <Toolbar likes_count={item.likes.count} comments_count={item.comments.count}/>
+            {item.caption ? item.caption.text ? <Col md={12}>{item.caption.text}</Col> : <div />: <div />}
             <Comments comments={item.comments}/>
           </Col>
         </Row>

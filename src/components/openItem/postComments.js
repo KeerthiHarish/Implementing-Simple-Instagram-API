@@ -33,10 +33,10 @@ class Comment extends React.Component {
     return (
       <div>
       	<Row>
-	      	<Col sm={3}>
+	      	<Col md={2}>
 	      		<Image responsive={true} src={comment.from.profile_picture}/>
 	      	</Col>
-	      	<Col sm={9}>
+	      	<Col md={10}>
 	      		<span>{name}</span>
 	      		<br/>
 	      		<span>{comment.text}</span>

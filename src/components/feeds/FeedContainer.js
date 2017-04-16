@@ -6,8 +6,9 @@ import FeedPost from './FeedPost'
 export default class FeedGrid extends React.Component {
 
   _handlerChange = (event) => {
-    if(event.key === 'Enter' ||  event.keyCode === 13)
+    if(event.key === 'Enter' ||  event.keyCode === 13) {
       this.props.searchUser(event.target.value);
+    }
   }
 
   render() {
@@ -24,7 +25,7 @@ export default class FeedGrid extends React.Component {
       <div>
         <Row>
           <Col md={5}>
-            <input type="text"  onChange={this._handlerChange.bind(this)} value={this.props.username} />
+            <input type="text" onKeyPress={this._handlerChange.bind(this)} defaultValue={this.props.username} />
           </Col>
           <Col md={4}>
             <p>Feed</p>
