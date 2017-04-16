@@ -1,3 +1,5 @@
+# Implementing-Simple-Instagram-API
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -24,9 +26,6 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 #### Feed:
 It retrieves 20 most recent Instagram posts of the user in the feed section with an option to load more posts (pagination).
-
-#### Sort:
-The posts in the feed section can be sorted by number of likes and date in both - ascending and descending order.
 
 #### Open:
 When user clicks on any post from the feed, it opens up on the right side section with it's recent comments.
@@ -60,10 +59,6 @@ my-app/
     index.js
 ```
 
-
-## Application Demo
-
-Demo Heroku URL: https://aqueous-beyond-14379.herokuapp.com/
 
 ###### Data Loading Issue (CORS Policy)
 Note: Due to CORS policy active on the server, it is preventing the application to load. To disable it from browser follow these simple steps:
